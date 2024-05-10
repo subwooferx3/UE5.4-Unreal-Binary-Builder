@@ -51,8 +51,8 @@ namespace UnrealBinaryBuilder
 
 		public static string GetMsBuildPath()
 		{
-			string ProgramFilesx86Path = Environment.GetEnvironmentVariable("ProgramFiles(x86)");
-			return Path.Combine(ProgramFilesx86Path, "Microsoft Visual Studio", "2019", "Community", "MSBuild", "Current", "Bin", "MSBuild.exe");
+			string ProgramFilesx86Path = Environment.GetEnvironmentVariable("ProgramFiles");
+			return Path.Combine(ProgramFilesx86Path, "Microsoft Visual Studio", "2022", "Community", "Msbuild", "Current", "Bin", "MSBuild.exe");
 		}
 
 		public static string GetEngineVersion(string BaseEnginePath)
